@@ -4,16 +4,7 @@ import {getSigninNotify,setSigninNotify} from 'discourse/plugins/force-signin/di
 export default {
     name : 'force-signin',
     initialize(){
-        // // Preconditions
-        // if ($(".current-user").length > 0) return; // must not be logged in
-        // // if($(".topic-post").length == 0) return;
-        // if(Discourse.User.current() != null) return;
-        // setTimeout(function(){
-        //     $(".login-button").click();
-        // },1000)
-        // TODO
-        // add custom delay, how many topics
-        // force signin or allow to close
+        
         dModal.reopen({
             
             @on("didInsertElement")
