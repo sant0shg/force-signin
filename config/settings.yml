@@ -1,0 +1,17 @@
+plugins:
+  force_signin_enabled:
+    client: true
+    default: false
+    refresh: true
+  force_signin_allow_close:
+    client: true
+    default: false
+    refresh: true
+  force_signin_home_page:
+    client: true
+    default: true
+    refresh: true
+  force_signin_topics_page:
+    client: true
+    default: true
+    refresh: true
