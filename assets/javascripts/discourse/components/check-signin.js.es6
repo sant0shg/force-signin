@@ -8,7 +8,7 @@ export default Ember.Component.extend({
     if(!this.siteSettings.force_signin_enabled) return;
     if ($(".current-user").length > 0) return; // must not be logged in
     // if($(".topic-post").length == 0) return;
-    if(Discourse.User.current() != null) return;
+    if(this.currentUser != null) return;
 
     setTimeout(function(){
         setSigninNotify(true);
